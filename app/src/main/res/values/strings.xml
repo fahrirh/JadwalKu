@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Jadwal Ku</string>
+
+
+        <string-array name="hari_array">
+            <item>Senin</item>
+            <item>Selasa</item>
+            <item>Rabu</item>
+            <item>Kamis</item>
+            <item>Jumat</item>
+            <item>Sabtu</item>
+            <item>Minggu</item>
+        </string-array>
+
+
+    <string name="hello">Pilih tombol di bawah!</string>
+    <string name="label_button">Set Alarm</string>
+    <string name="batal">Batalkan Alarm</string>
+
+    <string name="date_selected"></string>
+    <string name="action_settings">Settings</string>
+    <string name="time_picker_example">Time Picker Example</string>
+    <string name="time_pick">Pick the time and press save button</string>
+    <string name="time_save">Atur Waktu</string>
+    <string name="time_selected"></string>
+    <string name="time_current">The Time is:</string>
+</resources>
