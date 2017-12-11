@@ -17,6 +17,7 @@ public class DataHelper extends SQLiteOpenHelper {
     public DataHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         // TODO Auto-generated constructor stub
+        // tes commit
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
