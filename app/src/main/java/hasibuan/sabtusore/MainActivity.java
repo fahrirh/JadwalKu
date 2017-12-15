@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Tambahan Tes Alarm Notif
+        AlarmManagerUtil alarmUtil = new AlarmManagerUtil();
+        alarmUtil.initAlarmNotification(this);
 
         ton1=(ImageButton)findViewById(R.id.buttonLihatmk);
         ton1.setOnClickListener(new View.OnClickListener() {

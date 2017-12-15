@@ -24,4 +24,14 @@
     <string name="time_save">Atur Waktu</string>
     <string name="time_selected"></string>
     <string name="time_current">The Time is:</string>
+
+
+    <string name="notification_title">You\'ve been notified!</string>
+    <string name="notification_text">This is your notification text.</string>
+    <string name="learn_more">Learn More</string>
+    <string name="update">Update</string>
+    <string name="notify_me">Notify Me!</string>
+    <string name="update_me">Update Me!</string>
+    <string name="cancel_me">Cancel Me!</string>
+    <string name="notification_updated">Notification Updated!</string>
 </resources>

@@ -10,7 +10,6 @@
     android:background="#F4D03F"
     tools:context="hasibuan.sabtusore.MainActivity" >
 
-
     <ImageButton
         android:id="@+id/buttonAlarm"
         android:layout_width="wrap_content"
