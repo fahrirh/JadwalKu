@@ -21,6 +21,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     ImageButton ton1, ton2, ton3, ton4;
 
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -72,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 }
 
 
