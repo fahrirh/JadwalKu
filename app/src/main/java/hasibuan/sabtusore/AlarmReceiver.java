@@ -79,10 +79,13 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
 
     public static void createNotification(Context ctx, int id, String web, String web2, String web3, String web4, String web5, String web6) {
 
+
+        CustomList adapter = new CustomList(ctx, web, web2, web3, web4, web5, web6);
         //Tes Fahri
-        //RemoteViews remoteViews = new RemoteViews(ctx.getPackageName(), layoutResId);
+        RemoteViews remoteViews = new RemoteViews(ctx.getPackageName(), R.layout.list_notif);
         //remoteViews.setImageViewResource(R.id.image_icon, iconResource);
-        //remoteViews.setTextViewText(R.id.text_message, message);
+        remoteViews.setTextViewText(R.id.tvJamMasuk, web2);
+        remoteViews.setTextViewText(R.id.tvNamaMK, web3);
         //
 
         Bitmap largeIcon = BitmapFactory.decodeResource(
@@ -97,6 +100,8 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setContentTitle("Tes")
                         .setContentText("HOUR: " + web + ":" + calendar.get(Calendar.MINUTE))
+                        .setCustomContentView(remoteViews)
+                        //.setCustomBigContentView(bigRemoteView)
                         .setWhen(System.currentTimeMillis())
                         .setLargeIcon(largeIcon)
                         .setAutoCancel(true)
