@@ -31,6 +31,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
     Context ct;
     protected Cursor cursor;
     String[] web, web2, web3, web4, web5, web6;
+    //public static AlarmReceiver ma;
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -63,29 +64,45 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
         AlarmManagerUtil alarmUtil = new AlarmManagerUtil();
         alarmUtil.initAlarmNotification(context);
 
-        createNotification(context, 1, web[0], web2[0], web3[0], web4[0], web5[0], web6[0]);
+        //Find day
+        Calendar calendar = Calendar.getInstance();
+        int currentDay = calendar.get(Calendar.DAY_OF_WEEK);
+
+        //if(currentDay > 1 && currentDay < 7) {
+            createNotification(context, 1, web, web2, web3, web4, web5, web6);
+        //}
     }
 
     private static PendingIntent criarPendingIntent(
             Context ctx, int id) {
 
-        Intent resultIntent = new Intent(ctx, MainActivity.class);
+        Intent resultIntent = new Intent(ctx, JadwalHarian.class);
 
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(ctx);
-        stackBuilder.addParentStack(MainActivity.class);
+        stackBuilder.addParentStack(JadwalHarian.class);
         stackBuilder.addNextIntent(resultIntent);
         return stackBuilder.getPendingIntent(id, PendingIntent.FLAG_UPDATE_CURRENT);
     }
 
-    public static void createNotification(Context ctx, int id, String web, String web2, String web3, String web4, String web5, String web6) {
+    public static void createNotification(Context ctx, int id, String web[], String web2[],
+                                          String web3[], String web4[], String web5[], String web6[]) {
 
 
-        CustomList adapter = new CustomList(ctx, web, web2, web3, web4, web5, web6);
         //Tes Fahri
         RemoteViews remoteViews = new RemoteViews(ctx.getPackageName(), R.layout.list_notif);
-        //remoteViews.setImageViewResource(R.id.image_icon, iconResource);
-        remoteViews.setTextViewText(R.id.tvJamMasuk, web2);
-        remoteViews.setTextViewText(R.id.tvNamaMK, web3);
+        remoteViews.setImageViewResource(R.id.imageIcon, R.drawable.school);
+        remoteViews.setTextViewText(R.id.tvJamMasuk1, web2[0]);
+        remoteViews.setTextViewText(R.id.tvNamaMK1, web3[0]);
+        remoteViews.setTextViewText(R.id.tvJamMasuk2, web2[1]);
+        remoteViews.setTextViewText(R.id.tvNamaMK2, web3[1]);
+        remoteViews.setTextViewText(R.id.tvJamMasuk3, web2[2]);
+        remoteViews.setTextViewText(R.id.tvNamaMK3, web3[2]);
+        remoteViews.setTextViewText(R.id.tvJamMasuk4, web2[3]);
+        remoteViews.setTextViewText(R.id.tvNamaMK4, web3[3]);
+        remoteViews.setTextViewText(R.id.tvJamMasuk5, web2[4]);
+        remoteViews.setTextViewText(R.id.tvNamaMK5, web3[4]);
+        remoteViews.setTextViewText(R.id.tvJamMasuk6, web2[5]);
+        remoteViews.setTextViewText(R.id.tvNamaMK6, web3[5]);
         //
 
         Bitmap largeIcon = BitmapFactory.decodeResource(
@@ -97,10 +114,10 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
 
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(ctx)
-                        .setSmallIcon(R.mipmap.ic_launcher)
-                        .setContentTitle("Tes")
-                        .setContentText("HOUR: " + web + ":" + calendar.get(Calendar.MINUTE))
-                        .setCustomContentView(remoteViews)
+                        .setSmallIcon(R.drawable.school)
+                        .setContentTitle("Semangat Kuliah!")
+                        .setContentText("Persiapkan Dirimu.")
+                        //.setCustomContentView(remoteViews)
                         //.setCustomBigContentView(bigRemoteView)
                         .setWhen(System.currentTimeMillis())
                         .setLargeIcon(largeIcon)
@@ -109,10 +126,12 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
                         .setDefaults(NotificationCompat.DEFAULT_ALL)
                         .setContentIntent(pitNotificacao)
                         .setNumber(id)
-                        .setSubText("GORIO Engenharia");
+                        .setSubText("Tap untuk cek jadwal kuliah kamu hari ini.");
 
         NotificationManagerCompat nm = NotificationManagerCompat.from(ctx);
         nm.notify(id, mBuilder.build());
     }
+
+
 }
 

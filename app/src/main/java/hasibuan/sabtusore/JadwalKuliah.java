@@ -55,7 +55,7 @@ public class JadwalKuliah extends Activity {
         setContentView(R.layout.activity_jadwal_kuliah);
 
         CustomList adapter = new
-                CustomList(JadwalKuliah.this, web, web2, web3, web4, web5, web6);
+                CustomList( JadwalKuliah.this, web, web2, web3, web4, web5, web6);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {

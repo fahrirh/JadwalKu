@@ -2,15 +2,15 @@
     <string name="app_name">Jadwal Ku</string>
 
 
-        <string-array name="hari_array">
-            <item>Senin</item>
-            <item>Selasa</item>
-            <item>Rabu</item>
-            <item>Kamis</item>
-            <item>Jumat</item>
-            <item>Sabtu</item>
-            <item>Minggu</item>
-        </string-array>
+    <string-array name="hari_array">
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+        <item>Minggu</item>
+    </string-array>
 
 
     <string name="hello">Pilih tombol di bawah!</string>
