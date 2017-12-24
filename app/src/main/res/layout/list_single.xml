@@ -50,6 +50,4 @@
             android:layout_alignLeft="@+id/txt5"
             android:layout_below="@+id/txt5"/>
 
-
-
 </RelativeLayout>

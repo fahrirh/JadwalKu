@@ -42,7 +42,7 @@ public class JadwalHarian extends Activity {
             cursor = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
                     "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
                     "JOIN datahari ON jadwal.hari=datahari.hari " +
-                    "ORDER BY urut ASC;", null);
+                    "WHERE datahari.hari = 'Minggu' ORDER BY urut ASC;", null);
         }
         if(currentDay == 2) {
             cursor = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
@@ -108,4 +108,5 @@ public class JadwalHarian extends Activity {
         });
 
     }
+
 }

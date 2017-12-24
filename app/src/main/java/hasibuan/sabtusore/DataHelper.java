@@ -29,11 +29,11 @@ public class DataHelper extends SQLiteOpenHelper {
         db.execSQL(sql);
         //db.execSQL(sql2);
         sql = "INSERT INTO jadwal (kodemk, namamk, ruangan, dosen, hari, jammasuk, jamkeluar) " +
-                "VALUES ('IF8501', 'Sistem Basis Data', 'R.4.09', 'Cecep Nurul Alam','Rabu', '17.34', '10.20')," +
-                "('IF8505', 'Jaringan Komputer', 'R.4.05', 'Rahmat Zainal','Senin', '17.35', '8.40')," +
-                "('IF8506', 'Interaksi Manusia dan Komputer', 'R.4.11', 'Cepy Slamet','Senin', '9.30', '12.00')," +
-                "('IF8501L', 'Praktikum Sistem Basis Data', 'R.4.03', 'Acep Hida','Selasa', '7.00', '8.40')," +
-                "('EKM8701', 'Pengantar Ekonomi Makro', 'R.4.07', 'Achmad Subagja','Selasa', '16.20', '18.00')," +
+                "VALUES ('IF8501', 'Sistem Basis Data', 'R.4.09', 'Cecep Nurul Alam','Senin', '17.34', '10.20')," +
+                    "('IF8505', 'Jaringan Komputer', 'R.4.05', 'Rahmat Zainal','Senin', '17.35', '8.40')," +
+                "('IF8506', 'Interaksi Manusia dan Komputer', 'R.4.11', 'Cepy Slamet','Minggu', '9.30', '12.00')," +
+                "('IF8501L', 'Praktikum Sistem Basis Data', 'R.4.03', 'Acep Hida','Minggu', '7.00', '8.40')," +
+                "('EKM8701', 'Pengantar Ekonomi Makro', 'R.4.07', 'Achmad Subagja','Minggu', '16.20', '18.00')," +
                 "('IF8701L', 'Praktikum Sistem Multimedia', 'R.4.05', 'Nur Lukman','Rabu', '10.20', '12.00')," +
                 "('IF8503', 'Sistem Informasi', 'R.4.01', 'Cecep Nurul Alam','Rabu', '12.00', '15.10')," +
                 "('IF8701', 'Sistem Multimedia', 'R.4.04', 'Diena Raudiena','Kamis', '8.40', '10.20')," +
