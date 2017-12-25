@@ -45,7 +45,8 @@
         </receiver>
         <receiver android:name=".AlarmReceiver" />
 
-        <activity android:name=".JadwalHarian"></activity>
+        <activity android:name=".JadwalHarian" />
+        <activity android:name=".Info"></activity>
     </application>
 
 </manifest>

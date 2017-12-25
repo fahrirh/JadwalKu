@@ -65,9 +65,9 @@ public class MainActivity extends AppCompatActivity {
         ton4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
-                Intent in =new Intent(getApplicationContext(),Alarm.class);
+                Intent in =new Intent(getApplicationContext(),Info.class);
                 startActivity(in);
-                Toast.makeText(MainActivity.this, "Alarm", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Info", Toast.LENGTH_SHORT).show();
             }
         });
 
