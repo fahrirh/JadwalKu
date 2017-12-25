@@ -199,7 +199,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
         AlarmManagerUtil alarmUtil = new AlarmManagerUtil();
         alarmUtil.initAlarmNotification(context);
 
-        //Find day
+        //Find dayy
         Calendar calendar = Calendar.getInstance();
         int currentDay = calendar.get(Calendar.DAY_OF_WEEK);
 
