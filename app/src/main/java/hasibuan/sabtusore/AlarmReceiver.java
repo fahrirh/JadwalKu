@@ -196,6 +196,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
             adaminggu=1;
         }
 
+        //tes
         AlarmManagerUtil alarmUtil = new AlarmManagerUtil();
         alarmUtil.initAlarmNotification(context);
 
