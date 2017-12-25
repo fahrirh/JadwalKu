@@ -196,7 +196,6 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
             adaminggu=1;
         }
 
-        //tes n
         AlarmManagerUtil alarmUtil = new AlarmManagerUtil();
         alarmUtil.initAlarmNotification(context);
 
@@ -204,7 +203,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
         Calendar calendar = Calendar.getInstance();
         int currentDay = calendar.get(Calendar.DAY_OF_WEEK);
 
-        //Kondisi notif setelah cek data hari.
+        //Kondisi notif setelah cek data hari
         if(currentDay == 2){
             if(adasenin == 1){
                 createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetes);
