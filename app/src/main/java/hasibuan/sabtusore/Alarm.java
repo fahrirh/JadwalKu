@@ -28,7 +28,7 @@ public class Alarm extends Activity {
     //private NotificationReceiver mReceiver = new NotificationReceiver();
     public int bisa = 1;
 
-    //percobaan 2
+    //percobaan 3
 
     TimePicker picker;
     ImageButton buttonStart;
