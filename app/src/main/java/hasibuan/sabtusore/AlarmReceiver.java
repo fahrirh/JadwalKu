@@ -29,7 +29,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
     //Tes Fahri
     DataHelper dbcenter;
     Context ct;
-    protected Cursor cursor;
+    protected Cursor cursorsenin, cursorselasa, cursorrabu, cursorkamis, cursorjumat, cursorsabtu, cursorminggu;
     String[] web, web2, web3, web4, web5, web6;
     int adasenin;
     int adaselasa;
@@ -46,26 +46,154 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
 
         dbcenter= new DataHelper(ct);
         SQLiteDatabase db = dbcenter.getReadableDatabase();
-        cursor = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
+
+        //Cek data hari
+        cursorsenin = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
                         "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
                         "JOIN datahari ON jadwal.hari=datahari.hari " +
                         "WHERE datahari.hari = 'Senin' ORDER BY urut ASC;",null);
-        web = new String[cursor.getCount()];
-        cursor.moveToFirst();
-        int ngetes= cursor.getCount();
+        web = new String[cursorsenin.getCount()];
+        cursorsenin.moveToFirst();
+        int ngetes= cursorsenin.getCount();
         int a = 0;
-        for (int cc=0; cc < cursor.getCount(); cc++){
-            cursor.moveToPosition  (cc);
-            web[cc] = cursor.getString(0).toString();
-            a=cursor.getCount();
+        for (int cc=0; cc < cursorsenin.getCount(); cc++){
+            cursorsenin.moveToPosition  (cc);
+            web[cc] = cursorsenin.getString(0).toString();
+            a=cursorsenin.getCount();
+        }
+
+        cursorselasa = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
+                "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
+                "JOIN datahari ON jadwal.hari=datahari.hari " +
+                "WHERE datahari.hari = 'Selasa' ORDER BY urut ASC;",null);
+        web = new String[cursorselasa.getCount()];
+        cursorselasa.moveToFirst();
+        int ngetesselasa= cursorselasa.getCount();
+        int aselasa = 0;
+        for (int cc=0; cc < cursorselasa.getCount(); cc++){
+            cursorselasa.moveToPosition  (cc);
+            web[cc] = cursorselasa.getString(0).toString();
+            aselasa=cursorselasa.getCount();
+        }
+
+        cursorrabu = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
+                "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
+                "JOIN datahari ON jadwal.hari=datahari.hari " +
+                "WHERE datahari.hari = 'Rabu' ORDER BY urut ASC;",null);
+        web = new String[cursorrabu.getCount()];
+        cursorrabu.moveToFirst();
+        int ngetesrabu= cursorrabu.getCount();
+        int arabu = 0;
+        for (int cc=0; cc < cursorrabu.getCount(); cc++){
+            cursorrabu.moveToPosition  (cc);
+            web[cc] = cursorrabu.getString(0).toString();
+            arabu=cursorrabu.getCount();
+        }
+
+        cursorkamis = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
+                "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
+                "JOIN datahari ON jadwal.hari=datahari.hari " +
+                "WHERE datahari.hari = 'Kamis' ORDER BY urut ASC;",null);
+        web = new String[cursorkamis.getCount()];
+        cursorkamis.moveToFirst();
+        int ngeteskamis= cursorkamis.getCount();
+        int akamis = 0;
+        for (int cc=0; cc < cursorkamis.getCount(); cc++){
+            cursorkamis.moveToPosition  (cc);
+            web[cc] = cursorkamis.getString(0).toString();
+            akamis=cursorkamis.getCount();
+        }
+
+        cursorjumat = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
+                "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
+                "JOIN datahari ON jadwal.hari=datahari.hari " +
+                "WHERE datahari.hari = 'Jumat' ORDER BY urut ASC;",null);
+        web = new String[cursorjumat.getCount()];
+        cursorjumat.moveToFirst();
+        int ngetesjumat= cursorjumat.getCount();
+        int ajumat = 0;
+        for (int cc=0; cc < cursorjumat.getCount(); cc++){
+            cursorjumat.moveToPosition  (cc);
+            web[cc] = cursorjumat.getString(0).toString();
+            ajumat=cursorjumat.getCount();
+        }
+
+        cursorsabtu = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
+                "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
+                "JOIN datahari ON jadwal.hari=datahari.hari " +
+                "WHERE datahari.hari = 'Sabtu' ORDER BY urut ASC;",null);
+        web = new String[cursorsabtu.getCount()];
+        cursorsabtu.moveToFirst();
+        int ngetessabtu= cursorsabtu.getCount();
+        int asabtu = 0;
+        for (int cc=0; cc < cursorsabtu.getCount(); cc++){
+            cursorsabtu.moveToPosition  (cc);
+            web[cc] = cursorsabtu.getString(0).toString();
+            asabtu=cursorsabtu.getCount();
+        }
+
+        cursorminggu = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
+                "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
+                "JOIN datahari ON jadwal.hari=datahari.hari " +
+                "WHERE datahari.hari = 'Minggu' ORDER BY urut ASC;",null);
+        web = new String[cursorminggu.getCount()];
+        cursorminggu.moveToFirst();
+        int ngetesminggu= cursorminggu.getCount();
+        int aminggu = 0;
+        for (int cc=0; cc < cursorminggu.getCount(); cc++){
+            cursorminggu.moveToPosition  (cc);
+            web[cc] = cursorminggu.getString(0).toString();
+            aminggu=cursorminggu.getCount();
         }
 
         //percobaan ke 2 cek hari
         if(a==0){
-           adaminggu=0;
+           adasenin=0;
         }
         else if(a>0){
-           adaminggu=1;
+           adasenin=1;
+        }
+
+        if(aselasa==0){
+            adaselasa=0;
+        }
+        else if(aselasa>0){
+            adaselasa=1;
+        }
+
+        if(arabu==0){
+            adarabu=0;
+        }
+        else if(arabu>0){
+            adarabu=1;
+        }
+
+        if(akamis==0){
+            adakamis=0;
+        }
+        else if(akamis>0){
+            adakamis=1;
+        }
+
+        if(ajumat==0){
+            adajumat=0;
+        }
+        else if(ajumat>0){
+            adajumat=1;
+        }
+
+        if(asabtu==0){
+            adasabtu=0;
+        }
+        else if(asabtu>0){
+            adasabtu=1;
+        }
+
+        if(aminggu==0){
+            adaminggu=0;
+        }
+        else if(aminggu>0){
+            adaminggu=1;
         }
 
         AlarmManagerUtil alarmUtil = new AlarmManagerUtil();
@@ -75,70 +203,70 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
         Calendar calendar = Calendar.getInstance();
         int currentDay = calendar.get(Calendar.DAY_OF_WEEK);
 
-        /*if(currentDay > 1 && currentDay < 7) {
-            createNotification(context, 1, web, web2, web3, web4, web5, web6);
-        }
-        if(currentDay == 1 || currentDay == 7) {
-            createNotification2(context, 1, web, web2, web3, web4, web5, web6);
-        }*/
-
         //Kondisi notif setelah cek data hari
         if(currentDay == 2){
-            if(adaminggu == 1){
+            if(adasenin == 1){
                 createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetes);
+            }
+            else if(adasenin == 0){
+                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
+            }
+        }
+
+        if(currentDay == 3){
+            if(adaselasa == 1){
+                createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetesselasa);
+            }
+            else if(adaselasa == 0){
+                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
+            }
+        }
+
+        if(currentDay == 4){
+            if(adarabu == 1){
+                createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetesrabu);
+            }
+            else if(adarabu == 0){
+                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
+            }
+        }
+
+        if(currentDay == 5){
+            if(adakamis == 1){
+                createNotification(context, 1, web, web2, web3, web4, web5, web6, ngeteskamis);
+            }
+            else if(adakamis == 0){
+                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
+            }
+        }
+
+        if(currentDay == 6){
+            if(adajumat == 1){
+                createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetesjumat);
+            }
+            else if(adajumat == 0){
+                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
+            }
+        }
+
+        if(currentDay == 7){
+            if(adasabtu == 1){
+                createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetessabtu);
+            }
+            else if(adasabtu == 0){
+                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
+            }
+        }
+
+        if(currentDay == 1){
+            if(adaminggu == 1){
+                createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetesminggu);
             }
             else if(adaminggu == 0){
                 createNotification2(context, 1, web, web2, web3, web4, web5, web6);
             }
         }
-        /*if(currentDay == 2){
-            if(adasenin == 1){
-                createNotification(context, 1, web, web2, web3, web4, web5, web6);
-            }
-            else{
-                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
-            }
-        }
-        if(currentDay == 3){
-            if(adaselasa == 1){
-                createNotification(context, 1, web, web2, web3, web4, web5, web6);
-            }
-            else{
-                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
-            }
-        }
-        if(currentDay == 4){
-            if(adarabu == 1){
-                createNotification(context, 1, web, web2, web3, web4, web5, web6);
-            }
-            else{
-                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
-            }
-        }
-        if(currentDay == 5){
-            if(adakamis == 1){
-                createNotification(context, 1, web, web2, web3, web4, web5, web6);
-            }
-            else{
-                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
-            }
-        }
-        if(currentDay == 6){
-            if(adajumat == 1){
-                createNotification(context, 1, web, web2, web3, web4, web5, web6);
-            }
-            else{
-                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
-            }
-        }
-        if(currentDay == 7){
-            if(adasabtu == 1){
-                createNotification(context, 1, web, web2, web3, web4, web5, web6);
-            }
-            else{
-                createNotification2(context, 1, web, web2, web3, web4, web5, web6);
-            }
-        }*/
+
     }
 
     private static PendingIntent criarPendingIntent(
@@ -148,6 +276,17 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
 
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(ctx);
         stackBuilder.addParentStack(JadwalHarian.class);
+        stackBuilder.addNextIntent(resultIntent);
+        return stackBuilder.getPendingIntent(id, PendingIntent.FLAG_UPDATE_CURRENT);
+    }
+
+    private static PendingIntent criarPendingIntent2(
+            Context ctx, int id) {
+
+        Intent resultIntent = new Intent(ctx, MainActivity.class);
+
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(ctx);
+        stackBuilder.addParentStack(MainActivity.class);
         stackBuilder.addNextIntent(resultIntent);
         return stackBuilder.getPendingIntent(id, PendingIntent.FLAG_UPDATE_CURRENT);
     }
@@ -224,7 +363,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
         Bitmap largeIcon = BitmapFactory.decodeResource(
                 ctx.getResources(), R.mipmap.ic_launcher);
 
-        PendingIntent pitNotificacao = criarPendingIntent(ctx, id);
+        PendingIntent pitNotificacao = criarPendingIntent2(ctx, id);
 
         Calendar calendar = Calendar.getInstance();
 
