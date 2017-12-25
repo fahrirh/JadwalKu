@@ -28,7 +28,7 @@ public class Alarm extends Activity {
     //private NotificationReceiver mReceiver = new NotificationReceiver();
     public int bisa = 1;
 
-    //bismillah timepicker sudah oke
+    //bismillah timepicker sudah oke oke
 
     TimePicker picker;
     ImageButton buttonStart;
