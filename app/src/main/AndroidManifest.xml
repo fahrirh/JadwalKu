@@ -9,6 +9,8 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/school"
@@ -47,6 +49,16 @@
 
         <activity android:name=".JadwalHarian" />
         <activity android:name=".Info"></activity>
+
+
+        <!--
+        <service
+            android:enabled="true"
+            android:name=".MyService"
+            android:exported="false"
+            android:stopWithTask="false" />
+        -->
+
     </application>
 
 </manifest>
