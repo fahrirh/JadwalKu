@@ -82,12 +82,12 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText2"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/editText2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#E74C3C"
         android:shadowColor="@color/colorPrimaryDark"
         android:text="Kembali"
-        android:textColor="#FFFFFF"
-        android:background="#E74C3C"/>
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
