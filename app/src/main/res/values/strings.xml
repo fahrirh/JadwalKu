@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Jadwal Ku</string>
+    <string name="app_name">JadwalKu</string>
 
 
     <string-array name="hari_array">

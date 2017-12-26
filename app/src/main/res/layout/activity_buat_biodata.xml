@@ -130,13 +130,15 @@
 
         <Button
             android:id="@+id/set_buttonJamMasuk"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/timePicker1"
             android:layout_below="@+id/timePicker1"
             android:onClick="setTime"
             android:text="@string/time_save"
-            android:layout_marginLeft="40dp"/>
+            android:textColor="#FFFFFF"
+            android:background="#E74C3C"
+            />
 
         <TextView
             android:id="@+id/textViewJamMasuk"
@@ -164,13 +166,14 @@
 
         <Button
             android:id="@+id/set_buttonJamKeluar"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/timePicker2"
             android:layout_below="@+id/timePicker2"
             android:onClick="setTime"
             android:text="@string/time_save"
-            android:layout_marginLeft="40dp"/>
+            android:textColor="#FFFFFF"
+            android:background="#E74C3C"/>
 
         <TextView
             android:id="@+id/textViewJamKeluar"
