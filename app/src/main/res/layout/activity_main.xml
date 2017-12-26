@@ -14,19 +14,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageButton
             android:id="@+id/buttonLihatnote"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:elevation="4dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/note"
-            android:background="#00000000"
+            android:layout_alignLeft="@+id/buttonAlarm"
+            android:layout_alignStart="@+id/buttonAlarm"
+            android:layout_alignTop="@+id/buttonLihatmk"
             android:layout_marginLeft="6dp"
             android:layout_marginStart="6dp"
-            android:layout_alignTop="@+id/buttonLihatmk"
-            android:layout_alignLeft="@+id/buttonAlarm"
-            android:layout_alignStart="@+id/buttonAlarm" />
+            android:background="#00000000"
+            android:elevation="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/note" />
     </LinearLayout>
 
     <LinearLayout
@@ -58,9 +59,6 @@
             android:scaleType="centerInside"
             android:src="@drawable/books"
             android:background="#00000000"
-            android:layout_marginTop="80dp"
-            android:layout_marginRight="18dp"
-            android:layout_marginEnd="18dp"
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/buttonLihatjadwal"
             android:layout_alignEnd="@+id/buttonLihatjadwal" />
@@ -69,20 +67,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageButton
             android:id="@+id/buttonAlarm"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonLihatmk"
+            android:background="#00000000"
             android:elevation="4dp"
             android:scaleType="centerInside"
-            android:src="@drawable/infor"
-            android:background="#00000000"
-            android:layout_marginTop="34dp"
-            android:layout_marginLeft="170dp"
-            android:layout_marginStart="170dp"
-            android:layout_below="@+id/buttonLihatmk"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:src="@drawable/infor" />
     </LinearLayout>
 
 </LinearLayout>
