@@ -162,7 +162,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textView7"
-            android:layout_below="@+id/textView7"/>
+            android:layout_below="@+id/textView7" />
 
         <Button
             android:id="@+id/set_buttonJamKeluar"
@@ -185,21 +185,26 @@
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="?android:attr/borderlessButtonStyle"
             android:layout_alignLeft="@+id/set_buttonJamKeluar"
             android:layout_below="@+id/set_buttonJamKeluar"
-            android:text="Simpan" />
+            android:text="Simpan"
+            android:layout_marginBottom="7dp"
+            android:textColor="#FFFFFF"
+            android:background="#E74C3C"/>
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Kembali"
             style="?android:attr/borderlessButtonStyle"
             android:layout_alignLeft="@+id/button1"
-            android:layout_below="@+id/button1" />
+            android:layout_below="@+id/button1"
+            android:textColor="#FFFFFF"
+            android:background="#E74C3C"/>
 
 
     </LinearLayout>
