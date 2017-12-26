@@ -25,6 +25,17 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAlarm"
+        android:layout_toEndOf="@id/buttonAlarm"
+        android:layout_alignStart="@id/buttonAlarm"
+        android:layout_marginStart="65dp"
+        android:text="Alarm"
+        android:textSize="20sp"/>
+
     <ImageButton
         android:id="@+id/buttonLihatnote"
         android:layout_width="wrap_content"
@@ -38,6 +49,16 @@
         android:layout_alignTop="@+id/buttonLihatmk"
         android:layout_alignLeft="@+id/buttonAlarm"
         android:layout_alignStart="@+id/buttonAlarm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLihatnote"
+        android:layout_toEndOf="@id/buttonLihatnote"
+        android:layout_alignStart="@id/buttonLihatnote"
+        android:layout_marginStart="50dp"
+        android:text="Catatan"
+        android:textSize="20sp"/>
 
     <ImageButton
         android:id="@+id/buttonLihatjadwal"
@@ -53,6 +74,16 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLihatjadwal"
+        android:layout_toEndOf="@id/buttonLihatjadwal"
+        android:layout_alignStart="@id/buttonLihatjadwal"
+        android:layout_marginStart="55dp"
+        android:text="Jadwal"
+        android:textSize="20sp"/>
+
     <ImageButton
         android:id="@+id/buttonLihatmk"
         android:layout_width="wrap_content"
@@ -67,4 +98,14 @@
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/buttonLihatjadwal"
         android:layout_alignEnd="@+id/buttonLihatjadwal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLihatmk"
+        android:layout_toEndOf="@id/buttonLihatmk"
+        android:layout_alignStart="@id/buttonLihatmk"
+        android:layout_marginStart="35dp"
+        android:text="Mata Kuliah"
+        android:textSize="20sp"/>
 </RelativeLayout>

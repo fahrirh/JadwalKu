@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         AlarmManagerUtil alarmUtil = new AlarmManagerUtil();
         alarmUtil.initAlarmNotification(this);
 
+        //Mata Kuliah
         ton1=(ImageButton)findViewById(R.id.buttonLihatmk);
         ton1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Catatan
         ton2=(ImageButton)findViewById(R.id.buttonLihatnote);
         ton2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Jadwal
         ton3=(ImageButton)findViewById(R.id.buttonLihatjadwal);
         ton3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
@@ -61,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Pengingat
         ton4=(ImageButton)findViewById(R.id.buttonAlarm);
         ton4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
