@@ -70,21 +70,24 @@
 
     <Button
         android:id="@+id/button1"
-        style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText2"
         android:layout_alignParentBottom="true"
-        android:text="Simpan" />
+        android:text="Simpan"
+        android:textColor="#FFFFFF"
+        android:background="#E74C3C"/>
 
     <Button
         android:id="@+id/button2"
-        style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/editText2"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/editText2"
-        android:text="Kembali" />
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Kembali"
+        android:textColor="#FFFFFF"
+        android:background="#E74C3C"/>
 
 </RelativeLayout>

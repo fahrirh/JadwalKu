@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#F4D03F"
+    android:background="#FFFFFF"
     tools:context="hasibuan.sabtusore.LihatCatatan" >
     <ListView
         android:id="@+id/listView1"
@@ -23,10 +23,10 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="?android:attr/borderlessButtonStyle"
-
         android:text="Tambah Catatan Baru"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"
+        android:background="#E74C3C"/>
 </RelativeLayout>

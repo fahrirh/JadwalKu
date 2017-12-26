@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="hasibuan.sabtusore.UpdateCatatan"
-    android:background="#F4D03F">
+    android:background="#FFFFFF">
 
     <TextView
         android:id="@+id/textView01"
@@ -59,20 +59,20 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText2"
         android:layout_alignParentBottom="true"
-        style="?android:attr/borderlessButtonStyle"
-
-        android:text="Update" />
+        android:text="Update"
+        android:textColor="#FFFFFF"
+        android:background="#E74C3C"/>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kembali"
-        style="?android:attr/borderlessButtonStyle"
-
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2" />
+        android:layout_alignEnd="@+id/editText2"
+        android:textColor="#FFFFFF"
+        android:background="#E74C3C"/>
 
 
 
