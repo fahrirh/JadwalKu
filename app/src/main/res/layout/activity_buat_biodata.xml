@@ -146,11 +146,12 @@
 
         <TextView
             android:id="@+id/textViewJamMasuk"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/set_buttonJamMasuk"
-            android:text="@string/time_selected"
-            android:layout_marginLeft="80dp"/>
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:text="@string/time_selected" />
 
         <TextView
             android:id="@+id/textView7"
@@ -185,11 +186,12 @@
 
         <TextView
             android:id="@+id/textViewJamKeluar"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/set_buttonJamKeluar"
-            android:text="@string/time_selected"
-            android:layout_marginLeft="80dp"/>
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:text="@string/time_selected"/>
 
         <Button
             android:id="@+id/button1"

@@ -13,7 +13,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <ImageButton
             android:id="@+id/buttonLihatnote"
             android:layout_width="wrap_content"
@@ -31,7 +32,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <ImageButton
             android:id="@+id/buttonLihatjadwal"
             android:layout_width="wrap_content"
@@ -50,7 +52,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <ImageButton
             android:id="@+id/buttonLihatmk"
             android:layout_width="wrap_content"
@@ -76,7 +79,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <ImageButton
             android:id="@+id/buttonAlarm"
             android:layout_width="wrap_content"
