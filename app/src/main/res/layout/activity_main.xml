@@ -22,10 +22,7 @@
             android:elevation="4dp"
             android:scaleType="centerInside"
             android:src="@drawable/note"
-            android:background="#00000000"
-            android:layout_alignTop="@+id/buttonLihatmk"
-            android:layout_alignLeft="@+id/buttonAlarm"
-            android:layout_alignStart="@+id/buttonAlarm" />
+            android:background="#00000000"/>
     </LinearLayout>
 
     <LinearLayout
@@ -36,17 +33,13 @@
         android:background="@color/colorPrimary">
         <ImageButton
             android:id="@+id/buttonLihatjadwal"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:elevation="4dp"
             android:scaleType="centerInside"
             android:src="@drawable/calendar"
             android:background="#00000000"
-            android:layout_marginRight="175dp"
-            android:layout_marginEnd="175dp"
-            android:layout_alignTop="@+id/buttonAlarm"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignTop="@+id/buttonAlarm" />
 
     </LinearLayout>
 
@@ -58,7 +51,7 @@
         android:background="@color/colorPrimaryDark">
         <ImageButton
             android:id="@+id/buttonLihatmk"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:elevation="4dp"
             android:scaleType="centerInside"
@@ -74,7 +67,7 @@
         android:background="@color/colorPrimary">
         <ImageButton
             android:id="@+id/buttonAlarm"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:elevation="4dp"
             android:scaleType="centerInside"
