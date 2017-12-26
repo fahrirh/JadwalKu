@@ -12,8 +12,8 @@ import java.util.Calendar;
  */
 
 public class Const extends Activity{
-    public static final int[] ALARM_HOUR_TIME = {6, 8, 12,14,16, 23};
-    public static final int[] ALARM_MINUTE_TIME = {30, 00, 00, 00, 00, 24};
+    public static final int[] ALARM_HOUR_TIME = {6, 8, 12,14,16};
+    public static final int[] ALARM_MINUTE_TIME = {30, 00, 00, 00, 00};
 
 }
 

@@ -385,6 +385,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
 
         NotificationManagerCompat nm = NotificationManagerCompat.from(ctx);
         nm.notify(id, mBuilder.build());
+
     }
 
 
