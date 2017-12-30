@@ -34,8 +34,12 @@
     <string name="update_me">Update Me!</string>
     <string name="cancel_me">Cancel Me!</string>
     <string name="notification_updated">Notification Updated!</string>
+
     <string name="deskripsi"><b>JadwalKu</b> adalah sebuah aplikasi pengingat jadwal kuliah. Aplikasi ini dibuat untuk memenuhi Ujian Akhir Semester mata kuliah Mobile Programming.</string>
     <string name="pengembang1"><b>1.</b> Ahmad Afif (1147050009)</string>
     <string name="pengembang2"><b>2.</b> Fahri Ramadhan Hasibuan (1147050057)</string>
     <string name="pengembang3"><b>3.</b> Novianti Indah Putri (1147050126)</string>
+    <string name="catatan"><b>Catatan:</b> membuat catatan sebagai pengingat kegiatan yang akan dilakukan</string>
+    <string name="jadwal"><b>Jadwal Kuliah:</b> setelah memasukan data mata kuliah di menu mata kuliah, aplikasi akan membuat jadwal kuliah anda secara otomatis dan memberikan notifikasi daftar mata kuliah yang diambil setiap harinya.</string>
+    <string name="matkul"><b>Mata Kuliah:</b> mengelola data mata kuliah. Untuk memasukan data mata kuliah, hal-hal yang diperlukan adalah kode mata kuliah, nama mata kuliah, kode ruangan, nama dosen, hari beserta jam mata kuliah.</string>
 </resources>

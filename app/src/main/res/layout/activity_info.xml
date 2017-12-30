@@ -57,7 +57,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Catatan: membuat catatan sebagai pengingat kegiatan yang akan dilakukan"
+            android:text="@string/catatan"
             android:textColor="#000"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"/>
@@ -71,7 +71,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jadwal: setelah memasukan data mata kuliah di menu mata kuliah, aplikasi akan membuat jadwal kuliah anda secara otomatis berdasarkan hari."
+            android:text="@string/jadwal"
             android:textColor="#000"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"/>
@@ -85,7 +85,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mata Kuliah: memasukkan data mata kuliah berupa kode mata kuliah, nama mata kuliah, kode ruangan, dosen, hari beserta jam mata kuliah."
+            android:text="@string/matkul"
             android:textColor="#000"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"/>
