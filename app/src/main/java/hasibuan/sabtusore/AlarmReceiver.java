@@ -213,7 +213,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
             }
         }
 
-        if(currentDay == 3){
+        else if(currentDay == 3){
             if(adaselasa == 1){
                 createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetesselasa);
             }
@@ -222,7 +222,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
             }
         }
 
-        if(currentDay == 4){
+        else if(currentDay == 4){
             if(adarabu == 1){
                 createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetesrabu);
             }
@@ -231,7 +231,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
             }
         }
 
-        if(currentDay == 5){
+        else if(currentDay == 5){
             if(adakamis == 1){
                 createNotification(context, 1, web, web2, web3, web4, web5, web6, ngeteskamis);
             }
@@ -240,7 +240,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
             }
         }
 
-        if(currentDay == 6){
+        else if(currentDay == 6){
             if(adajumat == 1){
                 createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetesjumat);
             }
@@ -249,7 +249,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
             }
         }
 
-        if(currentDay == 7){
+        else if(currentDay == 7){
             if(adasabtu == 1){
                 createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetessabtu);
             }
@@ -258,7 +258,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
             }
         }
 
-        if(currentDay == 1){
+        else if(currentDay == 1){
             if(adaminggu == 1){
                 createNotification(context, 1, web, web2, web3, web4, web5, web6, ngetesminggu);
             }

@@ -44,31 +44,31 @@ public class JadwalHarian extends Activity {
                     "JOIN datahari ON jadwal.hari=datahari.hari " +
                     "WHERE datahari.hari = 'Minggu' ORDER BY urut ASC;", null);
         }
-        if(currentDay == 2) {
+        else if(currentDay == 2) {
             cursor = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
                     "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
                     "JOIN datahari ON jadwal.hari=datahari.hari " +
                     "WHERE datahari.hari = 'Senin' ORDER BY urut ASC;", null);
         }
-        if(currentDay == 3) {
+        else if(currentDay == 3) {
             cursor = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
                     "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
                     "JOIN datahari ON jadwal.hari=datahari.hari " +
                     "WHERE datahari.hari = 'Selasa' ORDER BY urut ASC;", null);
         }
-        if(currentDay == 4) {
+        else if(currentDay == 4) {
             cursor = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
                     "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
                     "JOIN datahari ON jadwal.hari=datahari.hari " +
                     "WHERE datahari.hari = 'Rabu' ORDER BY urut ASC;", null);
         }
-        if(currentDay == 5) {
+        else if(currentDay == 5) {
             cursor = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
                     "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
                     "JOIN datahari ON jadwal.hari=datahari.hari " +
                     "WHERE datahari.hari = 'Kamis' ORDER BY urut ASC;", null);
         }
-        if(currentDay == 6) {
+        else if(currentDay == 6) {
             cursor = db.rawQuery("SELECT datahari.hari, jadwal.namamk, jadwal.ruangan, jadwal.dosen, " +
                     "jadwal.jammasuk, jadwal.jamkeluar FROM jadwal " +
                     "JOIN datahari ON jadwal.hari=datahari.hari " +
