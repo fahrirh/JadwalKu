@@ -3,4 +3,19 @@
     <color name="colorPrimary">#E74C3C</color>
     <color name="colorPrimaryDark">#F4D03F</color>
     <color name="colorAccent">#E74C3C</color>
+    <color name="grey">#7f8c8d</color>
+    <color name="blue">#2980b9</color>
+    <color name="red">#db0a5b</color>
+    <color name="green">#1abc9c</color>
+    <color name="yellow">#f1c40f</color>
+    <color name="cloud">#ecf0f1</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="radablack">#424242</color>
+    <color name="ectasy">#f9690e</color>
+    <color name="alizarin">#e6192c</color>
+    <color name="jad">#00b16a</color>
+    <color name="pink_trf">#e32446</color>
+    <color name="trafood_color">#ea3a34</color>
+    <color name="asbestos">#7f8c8d</color>
 </resources>

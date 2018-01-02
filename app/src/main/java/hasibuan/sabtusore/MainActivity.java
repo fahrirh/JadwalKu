@@ -15,11 +15,12 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    ImageButton ton1, ton2, ton3, ton4;
+    LinearLayout ton1, ton2, ton3, ton4;
 
 
 
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         alarmUtil.initAlarmNotification(this);
 
         //Mata Kuliah
-        ton1=(ImageButton)findViewById(R.id.buttonLihatmk);
+        ton1=(LinearLayout) findViewById(R.id.buttonLihatmk);
         ton1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Catatan
-        ton2=(ImageButton)findViewById(R.id.buttonLihatnote);
+        ton2=(LinearLayout) findViewById(R.id.buttonLihatnote);
         ton2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Jadwal
-        ton3=(ImageButton)findViewById(R.id.buttonLihatjadwal);
+        ton3=(LinearLayout) findViewById(R.id.buttonLihatjadwal);
         ton3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Pengingat
-        ton4=(ImageButton)findViewById(R.id.buttonAlarm);
+        ton4=(LinearLayout) findViewById(R.id.buttonAlarm);
         ton4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
