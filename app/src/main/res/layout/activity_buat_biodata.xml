@@ -5,10 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="hasibuan.sabtusore.BuatBiodata"
     android:background="#FFFFFF">
 
@@ -123,7 +119,7 @@
             android:text="JAM MASUK"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:background="#E74C3C"/>
+            android:background="@color/alizarin"/>
 
         <TimePicker
             android:id="@+id/timePicker1"
@@ -133,8 +129,12 @@
             android:layout_below="@+id/textView6"/>
 
         <Button
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_horizontal"
             android:id="@+id/set_buttonJamMasuk"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/timePicker1"
             android:layout_below="@+id/timePicker1"
@@ -164,7 +164,7 @@
             android:text="JAM KELUAR"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:background="#E74C3C"/>
+            android:background="@color/alizarin"/>
 
         <TimePicker
             android:id="@+id/timePicker2"
@@ -174,8 +174,12 @@
             android:layout_below="@+id/textView7" />
 
         <Button
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_horizontal"
             android:id="@+id/set_buttonJamKeluar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/timePicker2"
             android:layout_below="@+id/timePicker2"
@@ -194,17 +198,17 @@
             android:text="@string/time_selected"/>
 
         <Button
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/set_buttonJamKeluar"
             android:layout_below="@+id/set_buttonJamKeluar"
             android:text="Simpan"
-            android:layout_marginBottom="7dp"
             android:textColor="#FFFFFF"
             android:background="#E74C3C"/>
 
-        <Button
+        <!--<Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -212,7 +216,7 @@
             android:layout_alignLeft="@+id/button1"
             android:layout_below="@+id/button1"
             android:textColor="#FFFFFF"
-            android:background="#E74C3C"/>
+            android:background="#E74C3C"/>-->
 
 
     </LinearLayout>

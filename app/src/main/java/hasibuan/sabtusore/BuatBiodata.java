@@ -95,7 +95,7 @@ public class BuatBiodata extends AppCompatActivity {
         //text6 = (EditText) findViewById(R.id.editText6);
         //text7 = (EditText) findViewById(R.id.editText7);
         ton1 = (Button) findViewById(R.id.button1);
-        ton2 = (Button) findViewById(R.id.button2);
+        //ton2 = (Button) findViewById(R.id.button2);
         ton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -114,13 +114,13 @@ public class BuatBiodata extends AppCompatActivity {
                 finish();
             }
         })
-        ; ton2.setOnClickListener(new View.OnClickListener() {
+        ; /*ton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
                 finish();
             }
-        });
+        });*/
     }
 
     ///////////////Sambungan TIMEPICKER

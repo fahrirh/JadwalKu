@@ -3,6 +3,7 @@ package hasibuan.sabtusore;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,7 +14,7 @@ import android.app.Activity;
 import java.util.Calendar;
 
 
-public class JadwalHarian extends Activity {
+public class JadwalHarian extends AppCompatActivity {
     ListView list;
 
     String[] web, web2, web3, web4, web5, web6;
