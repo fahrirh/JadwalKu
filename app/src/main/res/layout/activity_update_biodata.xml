@@ -18,7 +18,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="16dp"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
 
         <TextView
             android:id="@+id/textView1"
@@ -114,12 +115,16 @@
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/hari_spinner"
             android:layout_below="@+id/hari_spinner"
             android:layout_marginTop="10dp"
-            android:text="Jam Masuk" />
+            android:textSize="20dp"
+            android:text="JAM MASUK"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:background="@color/alizarin"/>
 
         <TimePicker
             android:id="@+id/timePicker1"
@@ -129,6 +134,7 @@
             android:layout_below="@+id/textView6"/>
 
         <Button
+            android:layout_gravity="center_horizontal"
             android:id="@+id/set_buttonJamMasuk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -136,24 +142,32 @@
             android:layout_below="@+id/timePicker1"
             android:onClick="setTime"
             android:text="@string/time_save"
-            android:layout_marginLeft="40dp"/>
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/alizarin"
+            android:textColor="@color/white"/>
 
         <TextView
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
             android:id="@+id/textViewJamMasuk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/set_buttonJamMasuk"
-            android:text="@string/time_selected"
-            android:layout_marginLeft="80dp"/>
+            android:text="@string/time_selected"/>
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textViewJamMasuk"
             android:layout_below="@+id/textViewJamMasuk"
             android:layout_marginTop="10dp"
-            android:text="Jam Keluar" />
+            android:textSize="20dp"
+            android:text="JAM KELUAR"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:background="@color/alizarin"/>
 
         <TimePicker
             android:id="@+id/timePicker2"
@@ -170,28 +184,35 @@
             android:layout_below="@+id/timePicker2"
             android:onClick="setTime"
             android:text="@string/time_save"
-            android:layout_marginLeft="40dp"/>
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/alizarin"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/textViewJamKeluar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/set_buttonJamKeluar"
             android:text="@string/time_selected"
-            android:layout_marginLeft="80dp"/>
+            android:layout_gravity="center_horizontal"/>
 
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/hari_spinner"
         android:layout_alignParentBottom="true"
         style="?android:attr/borderlessButtonStyle"
-
+        android:background="@color/alizarin"
+        android:textColor="@color/white"
         android:text="Update" />
 
     <Button
+        android:visibility="gone"
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

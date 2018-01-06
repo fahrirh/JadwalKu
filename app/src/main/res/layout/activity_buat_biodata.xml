@@ -141,10 +141,11 @@
             android:onClick="setTime"
             android:text="@string/time_save"
             android:textColor="#FFFFFF"
-            android:background="#E74C3C"
+            android:background="@color/alizarin"
             />
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/textViewJamMasuk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -186,9 +187,10 @@
             android:onClick="setTime"
             android:text="@string/time_save"
             android:textColor="#FFFFFF"
-            android:background="#E74C3C"/>
+            android:background="@color/alizarin"/>
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/textViewJamKeluar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -206,7 +208,7 @@
             android:layout_below="@+id/set_buttonJamKeluar"
             android:text="Simpan"
             android:textColor="#FFFFFF"
-            android:background="#E74C3C"/>
+            android:background="@color/alizarin"/>
 
         <!--<Button
             android:id="@+id/button2"
