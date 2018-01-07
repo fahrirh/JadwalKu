@@ -124,7 +124,7 @@
             android:text="JAM MASUK"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:background="@color/alizarin"/>
+            android:background="#E74C3C"/>
 
         <TimePicker
             android:id="@+id/timePicker1"
@@ -144,7 +144,7 @@
             android:text="@string/time_save"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:background="@color/alizarin"
+            android:background="#E74C3C"
             android:textColor="@color/white"/>
 
         <TextView
@@ -167,7 +167,7 @@
             android:text="JAM KELUAR"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:background="@color/alizarin"/>
+            android:background="#E74C3C"/>
 
         <TimePicker
             android:id="@+id/timePicker2"
@@ -186,7 +186,7 @@
             android:text="@string/time_save"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:background="@color/alizarin"
+            android:background="#E74C3C"
             android:textColor="@color/white"
             android:layout_gravity="center_horizontal"/>
 
@@ -201,13 +201,14 @@
 
 
     <Button
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/hari_spinner"
         android:layout_alignParentBottom="true"
         style="?android:attr/borderlessButtonStyle"
-        android:background="@color/alizarin"
+        android:background="#E74C3C"
         android:textColor="@color/white"
         android:text="Update" />
 

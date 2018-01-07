@@ -119,7 +119,7 @@
             android:text="JAM MASUK"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:background="@color/alizarin"/>
+            android:background="#E74C3C"/>
 
         <TimePicker
             android:id="@+id/timePicker1"
@@ -141,7 +141,7 @@
             android:onClick="setTime"
             android:text="@string/time_save"
             android:textColor="#FFFFFF"
-            android:background="@color/alizarin"
+            android:background="#E74C3C"
             />
 
         <TextView
@@ -165,7 +165,7 @@
             android:text="JAM KELUAR"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:background="@color/alizarin"/>
+            android:background="#E74C3C"/>
 
         <TimePicker
             android:id="@+id/timePicker2"
@@ -187,7 +187,7 @@
             android:onClick="setTime"
             android:text="@string/time_save"
             android:textColor="#FFFFFF"
-            android:background="@color/alizarin"/>
+            android:background="#E74C3C"/>
 
         <TextView
             android:visibility="gone"
@@ -208,7 +208,7 @@
             android:layout_below="@+id/set_buttonJamKeluar"
             android:text="Simpan"
             android:textColor="#FFFFFF"
-            android:background="@color/alizarin"/>
+            android:background="#E74C3C"/>
 
         <!--<Button
             android:id="@+id/button2"
