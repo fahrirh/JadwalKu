@@ -9,21 +9,13 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
 
-
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/school"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".BuatBiodata" />
         <activity android:name=".LihatBiodata" />
         <activity android:name=".UpdateBiodata" />
@@ -48,8 +40,7 @@
         <receiver android:name=".AlarmReceiver" />
 
         <activity android:name=".JadwalHarian" />
-        <activity android:name=".Info"></activity>
-
+        <activity android:name=".Info" />
 
         <!--
         <service
@@ -59,6 +50,14 @@
             android:stopWithTask="false" />
         -->
 
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CardviewJadwal"></activity>
     </application>
 
 </manifest>
