@@ -17,8 +17,22 @@ import java.util.ArrayList;
  */
 public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     private ArrayList<String> kota;
-    public DataAdapter(ArrayList<String> kota){
+    private ArrayList<String> w;
+    private ArrayList<String> w2;
+    private ArrayList<String> w3;
+    private ArrayList<String> w4;
+    private ArrayList<String> w5;
+    private ArrayList<String> w6;
+
+    public DataAdapter(ArrayList<String> w, ArrayList<String> w2, ArrayList<String> w3, ArrayList<String> w4, ArrayList<String> w5, ArrayList<String> w6){
         this.kota = kota;
+        this.w = w;
+        this.w2 = w2;
+        this.w3 = w3;
+        this.w4 = w4;
+        this.w5 = w5;
+        this.w6 = w6;
+
     }
 
 
@@ -31,20 +45,31 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(DataAdapter.ViewHolder viewHolder, int i) {
 
-        viewHolder.txtkota.setText(kota.get(i));
+        viewHolder.txtw.setText(w.get(i));
+        viewHolder.txtw2.setText(w2.get(i));
+        viewHolder.txtw3.setText(w3.get(i));
+        viewHolder.txtw4.setText(w4.get(i));
+        viewHolder.txtw5.setText(w5.get(i));
+        viewHolder.txtw6.setText(w6.get(i));
     }
 
     @Override
     public int getItemCount() {
-        return kota.size();
+        return w.size();
+        //return w2.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView txtkota;
+        private TextView txtw,txtw2,txtw3, txtw4, txtw5, txtw6;
         public ViewHolder(View view) {
             super(view);
 
-            txtkota = (TextView)view.findViewById(R.id.nama_kota);
+            txtw = (TextView)view.findViewById(R.id.txt);
+            txtw2 = (TextView)view.findViewById(R.id.txt2);
+            txtw3 = (TextView)view.findViewById(R.id.txt3);
+            txtw4 = (TextView)view.findViewById(R.id.txt4);
+            txtw5 = (TextView)view.findViewById(R.id.txt5);
+            txtw6 = (TextView)view.findViewById(R.id.txt6);
         }
     }
 }

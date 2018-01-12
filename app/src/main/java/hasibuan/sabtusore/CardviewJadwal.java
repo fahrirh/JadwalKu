@@ -32,6 +32,13 @@ public class CardviewJadwal extends AppCompatActivity {
     public static CardviewJadwal ma;
 
     private ArrayList<String> kota;
+    private ArrayList<String> w;
+    private ArrayList<String> w2;
+    private ArrayList<String> w3;
+    private ArrayList<String> w4;
+    private ArrayList<String> w5;
+    private ArrayList<String> w6;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,10 +68,10 @@ public class CardviewJadwal extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardview_jadwal);
-        initView();
+        initView(web, web2, web3, web4, web5, web6);
     }
 
-    private void initView(){
+    private void initView(String[] web, String[] web2, String[] web3, String[] web4, String[] web5, String[] web6){
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.card_recycler_view);
         recyclerView.setHasFixedSize(true);
 
@@ -82,8 +89,15 @@ public class CardviewJadwal extends AppCompatActivity {
         kota.add("Kendal");
         kota.add("Bogor");
 
+        //w = new ArrayList<>();
+        //for(int i=0; i< web.length; i++){
+           // w.add(web[i], web2[i], web3[i]);
+        //}
 
-        RecyclerView.Adapter adapter = new DataAdapter(kota);
+        //CustomList adapter = new CustomList( CardviewJadwal.this, web, web2, web3, web4, web5, web6);
+
+
+        RecyclerView.Adapter adapter = new DataAdapter(w, w2, w3, w4, w5, w6);
         recyclerView.setAdapter(adapter);
 
         recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
