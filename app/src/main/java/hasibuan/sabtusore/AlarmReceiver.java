@@ -313,7 +313,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
         //
 
         Bitmap largeIcon = BitmapFactory.decodeResource(
-                ctx.getResources(), R.mipmap.ic_launcher);
+                ctx.getResources(), R.drawable.school);
 
         PendingIntent pitNotificacao = criarPendingIntent(ctx, id);
 
@@ -327,7 +327,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
                         //.setCustomContentView(remoteViews)
                         //.setCustomBigContentView(bigRemoteView)
                         .setWhen(System.currentTimeMillis())
-                        .setLargeIcon(largeIcon)
+                        //.setLargeIcon(largeIcon)
                         .setAutoCancel(true)
                         .setPriority(NotificationCompat.PRIORITY_HIGH)
                         .setDefaults(NotificationCompat.DEFAULT_ALL)
@@ -361,7 +361,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
         //
 
         Bitmap largeIcon = BitmapFactory.decodeResource(
-                ctx.getResources(), R.mipmap.ic_launcher);
+                ctx.getResources(), R.drawable.school);
 
         PendingIntent pitNotificacao = criarPendingIntent2(ctx, id);
 
@@ -375,7 +375,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
                         //.setCustomContentView(remoteViews)
                         //.setCustomBigContentView(bigRemoteView)
                         .setWhen(System.currentTimeMillis())
-                        .setLargeIcon(largeIcon)
+                        //.setLargeIcon(largeIcon)
                         .setAutoCancel(true)
                         .setPriority(NotificationCompat.PRIORITY_HIGH)
                         .setDefaults(NotificationCompat.DEFAULT_ALL)
